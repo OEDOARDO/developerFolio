@@ -26,9 +26,11 @@ function Header() {
     <Headroom>
       <header className={isDark ? 'dark-menu header' : 'header'}>
         <a href="" className="logo">
-          <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          
+          <div class="header">
+  <img src="https://m.iphoto.net/STd2d.png" alt="logo" />
+</div>
+          
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
@@ -41,7 +43,7 @@ function Header() {
         <ul className={isDark ? 'dark-menu menu' : 'menu'}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">Sobre</a>
             </li>
           )}
           {viewExperience && (
@@ -70,7 +72,7 @@ function Header() {
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact">Contato</a>
           </li>
           <li>
             <a>
